@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abeje Ambaye | CS Student Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Abeje Ambaye</div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>ss
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#auth">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home-section">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi! I'm Abeje Ambaye, a passionate Computer Science student at University of Gondar.</p>
+            <img src="abel.jpg" alt="">
+            <canvas id="homeCanvas" width="400" height="200"></canvas>
+            <svg class="home-svg" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+                <circle cx="60" cy="60" r="50" stroke="#ff6f61" stroke-width="4" fill="#ffe6e1" />
+                <text x="60" y="70" text-anchor="middle" font-size="24" fill="#ff6f61" font-family="Roboto">CS</text>
+            </svg>
+        </section>
+
+        <section id="about" class="section about-section">
+            <h2>About Me</h2>
+            <p>
+                I am Abeje Ambaye, a dedicated Computer Science student at the University of Gondar.
+                I enjoy developing responsive web applications, exploring algorithms, and learning new technologies.
+            </p>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <h2>My Skills</h2>
+            <p class="skills-intro">
+                A showcase of my technical skills developed during my studies and projects.
+            </p>
+            <ul>
+                <li><strong>HTML5, CSS3, JavaScript (ES6+):</strong> Building modern responsive websites.</li>
+                <li><strong>Responsive Web Design & Mobile First:</strong> Ensuring great experiences on all devices.</li>
+                <li><strong>Canvas and SVG Graphics Programming:</strong> Creating animations and vector graphics.</li>
+                <li><strong>Data Structures & Algorithms:</strong> Strong foundation in problem solving.</li>
+                <li><strong>Version Control with Git:</strong> Efficient collaboration and project management.</li>
+                <li><strong>Basic Backend (Node.js, Express):</strong> Developing full-stack applications.</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" alt="Student Record System" />
+                <h3>Student Record System</h3>
+                <p>A web app to manage student records with features like add, edit, search, and delete using JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Personal Blog" />
+                <h3>Personal Blog</h3>
+                <p>A responsive blog platform built with vanilla HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="Canvas Art" />
+                <h3>Animated Canvas Art</h3>
+                <p>Creative shapes and animations rendered using HTML5 Canvas.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <form id="contactForm" novalidate>
+                <input type="text" name="name" id="name" placeholder="Your Name" required />
+                <input type="email" name="email" id="email" placeholder="Your Email" required />
+                <textarea name="message" id="message" rows="4" placeholder="Your Message" required></textarea>
+                <input type="password" name="password" id="contactPassword" placeholder="Password (min 8 characters)" required />
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="auth" class="section auth-section">
+            <h2>Login / Signup</h2>
+            <form id="authForm" novalidate>
+                <input type="text" name="username" id="username" placeholder="Username" required />
+                <input type="email" name="authEmail" id="authEmail" placeholder="Email" required />
+                <input type="password" name="authPassword" id="authPassword" placeholder="Password (min 8 characters)" required />
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/abejeambaye" target="_blank" aria-label="GitHub"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
+            <a href="https://linkedin.com/in/abejeambaye" target="_blank" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
+            <a href="mailto:abeje@example.com" aria-label="Email"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" /></a>
+        </div>
+        <p>© 2025 Abeje Ambaye. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
